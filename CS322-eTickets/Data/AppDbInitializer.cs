@@ -61,147 +61,147 @@ namespace CS322_eTickets.Data
 						new Actor()
 						{
 							FullName = "Zoran Cvijanovic",
-							Bio = "This is the Bio of the first actor",
+							Bio = "This is the Bio of the actor Zoran Cvijanovic",
 							ProfilePictureURL = "https://ibb.co/8jNLfPb"
 
                         },
 						new Actor()
 						{
 							FullName = "Vuk Kostic",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the actor Vuk Kostic",
 							ProfilePictureURL = "https://ibb.co/8jNLfPb"
                         },
 						new Actor()
 						{
 							FullName = "Tihomir Stanic",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the actor Tihomir Stanic",
 							ProfilePictureURL = "https://ibb.co/9rc7kJp"
                         },
 						new Actor()
 						{
 							FullName = "Tanja Boskovic",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the actor Tanja Boskovic",
 							ProfilePictureURL = "https://ibb.co/5hxZSrT"
                         },
 						new Actor()
 						{
 							FullName = "Srdjan Todorovic",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the actor Srdjan Todorovic",
 							ProfilePictureURL = "https://ibb.co/p3Yrd13"
                         },
                         new Actor()
                         {
                             FullName = "Sergej Trifunovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Sergej Trifunovic",
                             ProfilePictureURL = "https://ibb.co/kKQ1wqS"
                         },
 
                         new Actor()
                         {
                             FullName = "Nikola Rakocevic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Nikola Rakocevic",
                             ProfilePictureURL = "https://ibb.co/nbkL8ry"
                         },
                         new Actor()
                         {
                             FullName = "Nikola Djuricko",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Nikola Djuricko",
                             ProfilePictureURL = "https://ibb.co/xs3h1cB"
                         },
                         new Actor()
                         {
                             FullName = "Nenad Jezdic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Nenad Jezdic",
                             ProfilePictureURL = "https://ibb.co/85ZhB4Z"
                         },
                         new Actor()
                         {
                             FullName = "Nebojsa Glogovac",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Nebojsa Glogovac",
                             ProfilePictureURL = "https://ibb.co/fpKzFNL"
                         },
                         new Actor()
                         {
                             FullName = "Mima Karadzic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Mima Karadzic",
                             ProfilePictureURL = "https://ibb.co/WkHK7qp"
                         },
                         new Actor()
                         {
                             FullName = "Natasa Tapuskovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Natasa Tapuskovic",
                             ProfilePictureURL = "https://ibb.co/BPbnjNn"
                         },
                         new Actor()
                         {
                             FullName = "Milos Bikovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Milos Bikovic",
                             ProfilePictureURL = "https://ibb.co/KF03B6d"
                         },
                         new Actor()
                         {
                             FullName = "Milena Radulovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Milena Radulovic",
                             ProfilePictureURL = "https://ibb.co/cJWmmvF"
                         },
                         new Actor()
                         {
                             FullName = "Lazar Ristovski",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Lazar Ristovski",
                             ProfilePictureURL = "https://ibb.co/4tRmPw4"
                         },
                         new Actor()
                         {
                             FullName = "Katarina Radivojevic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Katarina Radivojevic",
                             ProfilePictureURL = "https://ibb.co/C6yMszw"
                         },
                         new Actor()
                         {
                             FullName = "Gordan Kicic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Gordan Kicic",
                             ProfilePictureURL = "https://ibb.co/P1LzKsc"
                         },
                         new Actor()
                         {
                             FullName = "Dubravka Mijatovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Dubravka Mijatovic",
                             ProfilePictureURL = "https://ibb.co/nsQ67DY"
                         },
                         new Actor()
                         {
                             FullName = "Goran Radakovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Goran Radakovic",
                             ProfilePictureURL = "https://ibb.co/8NJVGVK"
                         },
                         new Actor()
                         {
                             FullName = "Dragan Petrovic Pele",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Dragan Petrovic Pele",
                             ProfilePictureURL = "https://ibb.co/w4QzP52"
                         },
                         new Actor()
                         {
                             FullName = "Dragan Micanovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Dragan Micanovic",
                             ProfilePictureURL = "https://ibb.co/7zhKw6G"
                         },
                         new Actor()
                         {
                             FullName = "Dragan Jovanovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Dragan Jovanovic",
                             ProfilePictureURL = "https://ibb.co/Rvf5Y5M"
                         },
                         new Actor()
                         {
                             FullName = "Dragan Bjelogrlic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Dragan Bjelogrlic",
                             ProfilePictureURL = "https://ibb.co/C8csHXd"
                         },
                         new Actor()
                         {
                             FullName = "Brankica Sebastijanovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the actor Brankica Sebastijanovic",
                             ProfilePictureURL = "https://ibb.co/kXVVp8C"
                         },
                         new Actor()
@@ -258,20 +258,20 @@ namespace CS322_eTickets.Data
 						new Producer()
 						{
 							FullName = "Predrag Velinovic",
-							Bio = "This is the Bio of the first actor",
+							Bio = "This is the Bio of the producer Predrag Velinovic",
 							ProfilePictureURL = "https://ibb.co/1JGRjQD"
 
                         },
 						new Producer()
 						{
 							FullName = "Miroslav Terzic",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the producer Miroslav Terzic",
 							ProfilePictureURL = "https://ibb.co/7RTdrKT"
                         },
 						new Producer()
 						{
 							FullName = "Radivoje Andric",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the producer Radivoje Andric",
 							ProfilePictureURL = "https://ibb.co/rkF26dc"
                         },
 						new Producer()
@@ -283,44 +283,50 @@ namespace CS322_eTickets.Data
 						new Producer()
 						{
 							FullName = "Zdravko Sotra",
-							Bio = "This is the Bio of the second actor",
+							Bio = "This is the Bio of the producer Srdjan Koljevic",
 							ProfilePictureURL = "https://ibb.co/ss8Jgb2"
                         },
                         new Producer()
                         {
                             FullName = "Milorad Milinkovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Milorad Milinkovic",
                             ProfilePictureURL = "https://ibb.co/qgBX0rb"
                         },
                         new Producer()
                         {
                             FullName = "Dejan Zecevic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Dejan Zecevic",
                             ProfilePictureURL = "https://ibb.co/3y8mbmD"
                         },
                         new Producer()
                         {
                             FullName = "Andrey Volgin",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Andrey Volgin",
                             ProfilePictureURL = "https://ibb.co/546bCF4"
                         },
                         new Producer()
                         {
                             FullName = "Miroslav Stamatov",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Miroslav Stamatov",
                             ProfilePictureURL = "https://ibb.co/sRbV663"
                         },
                         new Producer()
                         {
                             FullName = "Goran Markovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Goran Markovic",
                             ProfilePictureURL = "https://ibb.co/gMJxVfs"
                         },
                         new Producer()
                         {
                             FullName = "Dragan Marinkovic",
-                            Bio = "This is the Bio of the second actor",
+                            Bio = "This is the Bio of the producer Dragan Marinkovic",
                             ProfilePictureURL = "https://ibb.co/FbbyCX7"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Ivan Krstovic",
+                            Bio = "This is the Bio of the producer Ivan Krstovic",
+                            ProfilePictureURL = "https://ibb.co/G3bz5gX"
                         }
 
                     });
@@ -340,19 +346,19 @@ namespace CS322_eTickets.Data
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(10),
 							CinemaId = 3,
-							ProducerId = 3,
+							ProducerId = 1,
 							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
 						{
 							Name = "Ustanicka ulica",
-							Description = "This is the description",
+							Description = "This is the movie description",
 							Price = 9.50,
 							ImageURL = "https://ibb.co/QN2VzsV",
 							StartDate = DateTime.Now,
 							EndDate = DateTime.Now.AddDays(3),
 							CinemaId = 1,
-							ProducerId = 1,
+							ProducerId = 2,
 							MovieCategory = MovieCategory.Action
 						},
 						new Movie()
@@ -364,7 +370,7 @@ namespace CS322_eTickets.Data
 							StartDate = DateTime.Now,
 							EndDate = DateTime.Now.AddDays(7),
 							CinemaId = 4,
-							ProducerId = 4,
+							ProducerId = 3,
 							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
@@ -376,7 +382,7 @@ namespace CS322_eTickets.Data
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(-5),
 							CinemaId = 1,
-							ProducerId = 2,
+							ProducerId = 4,
 							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
@@ -388,7 +394,7 @@ namespace CS322_eTickets.Data
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(-2),
 							CinemaId = 1,
-							ProducerId = 3,
+							ProducerId = 5,
 							MovieCategory = MovieCategory.Documentary
 						},
 						new Movie()
@@ -413,7 +419,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 12,
                             MovieCategory = MovieCategory.Drama
                         },
                         new Movie()
@@ -425,7 +431,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 3,
                             MovieCategory = MovieCategory.Comedy
                         },
                         new Movie()
@@ -437,7 +443,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 6,
                             MovieCategory = MovieCategory.Comedy
                         },
                         new Movie()
@@ -449,7 +455,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 7,
                             MovieCategory = MovieCategory.Comedy
                         },
                         new Movie()
@@ -485,7 +491,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 3,
                             MovieCategory = MovieCategory.Comedy
                         },
                         new Movie()
@@ -497,7 +503,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 8,
                             MovieCategory = MovieCategory.Action
                         },
                         new Movie()
@@ -509,7 +515,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 9,
                             MovieCategory = MovieCategory.Comedy
                         },
                         new Movie()
@@ -521,7 +527,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 10,
                             MovieCategory = MovieCategory.Drama
                         },
                         new Movie()
@@ -533,7 +539,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 4,
                             MovieCategory = MovieCategory.Drama
                         },
                         new Movie()
@@ -545,7 +551,7 @@ namespace CS322_eTickets.Data
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
-                            ProducerId = 5,
+                            ProducerId = 11,
                             MovieCategory = MovieCategory.Comedy
                         }
                     });
@@ -559,97 +565,201 @@ namespace CS322_eTickets.Data
 						new Actor_Movie()
 						{
 							ActorId = 1,
-							MovieId = 1
+							MovieId = 8
 						},
 						new Actor_Movie()
 						{
-							ActorId = 3,
-							MovieId = 1
+							ActorId = 2,
+							MovieId = 13
 						},
-
+                        new Actor_Movie()
+                        {
+                            ActorId = 2,
+                            MovieId = 10
+                        },
+                         new Actor_Movie()
+						{
+							ActorId = 3,
+							MovieId = 15
+						},
 						 new Actor_Movie()
 						{
-							ActorId = 1,
-							MovieId = 2
-						},
-						 new Actor_Movie()
-						{
 							ActorId = 4,
-							MovieId = 2
+							MovieId = 1
 						},
 
-						new Actor_Movie()
-						{
-							ActorId = 1,
-							MovieId = 3
-						},
-						new Actor_Movie()
-						{
-							ActorId = 2,
-							MovieId = 3
-						},
 						new Actor_Movie()
 						{
 							ActorId = 5,
 							MovieId = 3
 						},
+                        new Actor_Movie()
+                        {
+                            ActorId = 5,
+                            MovieId = 9
+                        },
+                        new Actor_Movie()
+						{
+							ActorId = 6,
+							MovieId = 7
+						},
+						new Actor_Movie()
+						{
+							ActorId = 7,
+							MovieId = 16
+						},
+                        new Actor_Movie()
+                        {
+                            ActorId = 8,
+                            MovieId = 12
+                        },
 
-
-						new Actor_Movie()
+                        new Actor_Movie()
 						{
-							ActorId = 2,
-							MovieId = 4
+							ActorId = 9,
+							MovieId = 9
 						},
-						new Actor_Movie()
-						{
-							ActorId = 3,
-							MovieId = 4
-						},
-						new Actor_Movie()
-						{
-							ActorId = 4,
-							MovieId = 4
-						},
-
-
-						new Actor_Movie()
-						{
-							ActorId = 2,
-							MovieId = 5
-						},
-						new Actor_Movie()
-						{
-							ActorId = 3,
-							MovieId = 5
-						},
-						new Actor_Movie()
-						{
-							ActorId = 4,
-							MovieId = 5
-						},
-						new Actor_Movie()
-						{
-							ActorId = 5,
-							MovieId = 5
-						},
-
-
-						new Actor_Movie()
-						{
-							ActorId = 3,
-							MovieId = 6
-						},
-						new Actor_Movie()
-						{
-							ActorId = 4,
-							MovieId = 6
-						},
-						new Actor_Movie()
-						{
-							ActorId = 5,
-							MovieId = 6
-						},
-					});
+                        new Actor_Movie()
+                        {
+                            ActorId = 10,
+                            MovieId = 17
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 11,
+                            MovieId = 1
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 12,
+                            MovieId = 11
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 13,
+                            MovieId = 5
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 13,
+                            MovieId = 6
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 14,
+                            MovieId = 12
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 15,
+                            MovieId = 17
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 16,
+                            MovieId = 7
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 17,
+                            MovieId = 2
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 17,
+                            MovieId = 10
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 11,
+                            MovieId = 12
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 18,
+                            MovieId = 3
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 19,
+                            MovieId = 3
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 20,
+                            MovieId = 1
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 20,
+                            MovieId = 15
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 21,
+                            MovieId = 11
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 22,
+                            MovieId = 17
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 23,
+                            MovieId = 7
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 24,
+                            MovieId = 6
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 25,
+                            MovieId = 15
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 26,
+                            MovieId = 8
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 26,
+                            MovieId = 11
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 27,
+                            MovieId = 14
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 28,
+                            MovieId = 7
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 29,
+                            MovieId = 4
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 30,
+                            MovieId = 5
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 30,
+                            MovieId = 13
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 31,
+                            MovieId = 5
+                        },
+                    });
 					context.SaveChanges();
 				}
 			}
@@ -683,7 +793,7 @@ namespace CS322_eTickets.Data
 						Email = adminUserEmail,
 						EmailConfirmed = true
 					};
-					await userManager.CreateAsync(newAdminUser, "Coding@1234?");
+					await userManager.CreateAsync(newAdminUser, "andjela@1234?");
 					await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
 				}
 
@@ -700,7 +810,7 @@ namespace CS322_eTickets.Data
 						Email = appUserEmail,
 						EmailConfirmed = true
 					};
-					await userManager.CreateAsync(newAppUser, "Coding@1234?");
+					await userManager.CreateAsync(newAppUser, "user@1234?");
 					await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
 				}
 			}
