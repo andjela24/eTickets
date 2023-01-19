@@ -23,31 +23,31 @@ namespace CS322_eTickets.Data
 						new Cinema()
 						{
 							Name = "Cinema 1",
-							Logo = "http://dotnethow.net/images/cinemas/cinema-1.jpeg",
+							Logo = "https://ibb.co/GJtYsL6",
 							Description = "This is the description of the first cinema"
 						},
 						new Cinema()
 						{
 							Name = "Cinema 2",
-							Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
+							Logo = "https://ibb.co/jwzGF2q",
 							Description = "This is the description of the first cinema"
 						},
 						new Cinema()
 						{
 							Name = "Cinema 3",
-							Logo = "http://dotnethow.net/images/cinemas/cinema-3.jpeg",
+							Logo = "https://ibb.co/mChk2td",
 							Description = "This is the description of the first cinema"
 						},
 						new Cinema()
 						{
 							Name = "Cinema 4",
-							Logo = "http://dotnethow.net/images/cinemas/cinema-4.jpeg",
+							Logo = "https://ibb.co/FzYjX8B",
 							Description = "This is the description of the first cinema"
 						},
 						new Cinema()
 						{
 							Name = "Cinema 5",
-							Logo = "http://dotnethow.net/images/cinemas/cinema-5.jpeg",
+							Logo = "https://ibb.co/thnyBYR",
 							Description = "This is the description of the first cinema"
 						},
 					});
@@ -60,36 +60,194 @@ namespace CS322_eTickets.Data
 					{
 						new Actor()
 						{
-							FullName = "Actor 1",
+							FullName = "Zoran Cvijanovic",
 							Bio = "This is the Bio of the first actor",
-							ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
+							ProfilePictureURL = "https://ibb.co/8jNLfPb"
 
-						},
+                        },
 						new Actor()
 						{
-							FullName = "Actor 2",
+							FullName = "Vuk Kostic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/8jNLfPb"
+                        },
 						new Actor()
 						{
-							FullName = "Actor 3",
+							FullName = "Tihomir Stanic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/9rc7kJp"
+                        },
 						new Actor()
 						{
-							FullName = "Actor 4",
+							FullName = "Tanja Boskovic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/5hxZSrT"
+                        },
 						new Actor()
 						{
-							FullName = "Actor 5",
+							FullName = "Srdjan Todorovic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
-						}
-					});
+							ProfilePictureURL = "https://ibb.co/p3Yrd13"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Sergej Trifunovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/kKQ1wqS"
+                        },
+
+                        new Actor()
+                        {
+                            FullName = "Nikola Rakocevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/nbkL8ry"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Nikola Djuricko",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/xs3h1cB"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Nenad Jezdic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/85ZhB4Z"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Nebojsa Glogovac",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/fpKzFNL"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Mima Karadzic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/WkHK7qp"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Natasa Tapuskovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/BPbnjNn"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Milos Bikovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/KF03B6d"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Milena Radulovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/cJWmmvF"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Lazar Ristovski",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/4tRmPw4"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Katarina Radivojevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/C6yMszw"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Gordan Kicic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/P1LzKsc"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Dubravka Mijatovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/nsQ67DY"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Goran Radakovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/8NJVGVK"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Dragan Petrovic Pele",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/w4QzP52"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Dragan Micanovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/7zhKw6G"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Dragan Jovanovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/Rvf5Y5M"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Dragan Bjelogrlic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/C8csHXd"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Brankica Sebastijanovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/kXVVp8C"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Branka Katic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/nRqx3rR"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Boris Milivojevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/c2HDBf8"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Andrija Milosevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/C1dsFGz"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Andjela Jovanovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/McBzcr8"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Aleksandra Balmazovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/3BDW36M"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Aleksandar Radojcic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/6YxHtBD"
+                        },
+                        new Actor()
+                        {
+                            FullName = "Aleksandar Bercek",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/Q88YPdB"
+                        }
+
+                    });
 					context.SaveChanges();
 				}
 				//Producers
@@ -99,36 +257,73 @@ namespace CS322_eTickets.Data
 					{
 						new Producer()
 						{
-							FullName = "Producer 1",
+							FullName = "Predrag Velinovic",
 							Bio = "This is the Bio of the first actor",
-							ProfilePictureURL = "http://dotnethow.net/images/producers/producer-1.jpeg"
+							ProfilePictureURL = "https://ibb.co/1JGRjQD"
 
-						},
+                        },
 						new Producer()
 						{
-							FullName = "Producer 2",
+							FullName = "Miroslav Terzic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/producers/producer-2.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/7RTdrKT"
+                        },
 						new Producer()
 						{
-							FullName = "Producer 3",
+							FullName = "Radivoje Andric",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/producers/producer-3.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/rkF26dc"
+                        },
 						new Producer()
 						{
-							FullName = "Producer 4",
+							FullName = "Srdjan Koljevic",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/producers/producer-4.jpeg"
-						},
+							ProfilePictureURL = "https://ibb.co/WnFwxrb"
+                        },
 						new Producer()
 						{
-							FullName = "Producer 5",
+							FullName = "Zdravko Sotra",
 							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "http://dotnethow.net/images/producers/producer-5.jpeg"
-						}
-					});
+							ProfilePictureURL = "https://ibb.co/ss8Jgb2"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Milorad Milinkovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/qgBX0rb"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Dejan Zecevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/3y8mbmD"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Andrey Volgin",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/546bCF4"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Miroslav Stamatov",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/sRbV663"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Goran Markovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/gMJxVfs"
+                        },
+                        new Producer()
+                        {
+                            FullName = "Dragan Marinkovic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://ibb.co/FbbyCX7"
+                        }
+
+                    });
 					context.SaveChanges();
 				}
 				//Movies
@@ -138,22 +333,22 @@ namespace CS322_eTickets.Data
 					{
 						new Movie()
 						{
-							Name = "Life",
-							Description = "This is the Life movie description",
-							Price = 39.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
+							Name = "Volim te najvise na svetu",
+							Description = "This is the movie description",
+							Price = 9.50,
+							ImageURL = "https://ibb.co/RNjV6DW",
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(10),
 							CinemaId = 3,
 							ProducerId = 3,
-							MovieCategory = MovieCategory.Documentary
+							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
 						{
-							Name = "The Shawshank Redemption",
-							Description = "This is the Shawshank Redemption description",
-							Price = 29.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+							Name = "Ustanicka ulica",
+							Description = "This is the description",
+							Price = 9.50,
+							ImageURL = "https://ibb.co/QN2VzsV",
 							StartDate = DateTime.Now,
 							EndDate = DateTime.Now.AddDays(3),
 							CinemaId = 1,
@@ -162,53 +357,198 @@ namespace CS322_eTickets.Data
 						},
 						new Movie()
 						{
-							Name = "Ghost",
-							Description = "This is the Ghost movie description",
-							Price = 39.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+							Name = "3 Palme za 2 bitange i ribicu",
+							Description = "This is the movie description",
+							Price = 11.50,
+							ImageURL = "https://ibb.co/Qk6wyNx",
 							StartDate = DateTime.Now,
 							EndDate = DateTime.Now.AddDays(7),
 							CinemaId = 4,
 							ProducerId = 4,
-							MovieCategory = MovieCategory.Horror
+							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
 						{
-							Name = "Race",
-							Description = "This is the Race movie description",
+							Name = "Sivi kamion crvene boje",
+							Description = "This is the movie description",
 							Price = 39.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
+							ImageURL = "https://ibb.co/HNwWR9Y",
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(-5),
 							CinemaId = 1,
 							ProducerId = 2,
-							MovieCategory = MovieCategory.Documentary
+							MovieCategory = MovieCategory.Comedy
 						},
 						new Movie()
 						{
-							Name = "Scoob",
-							Description = "This is the Scoob movie description",
-							Price = 39.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
+							Name = "Sesir profesora Kosete Vujica",
+							Description = "This is the movie description",
+							Price = 8.50,
+							ImageURL = "https://ibb.co/sJfzRGs",
 							StartDate = DateTime.Now.AddDays(-10),
 							EndDate = DateTime.Now.AddDays(-2),
 							CinemaId = 1,
 							ProducerId = 3,
-							MovieCategory = MovieCategory.Cartoon
+							MovieCategory = MovieCategory.Documentary
 						},
 						new Movie()
 						{
-							Name = "Cold Soles",
-							Description = "This is the Cold Soles movie description",
-							Price = 39.50,
-							ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
+							Name = "Samac u braku",
+							Description = "This is the movie description",
+							Price = 12.50,
+							ImageURL = "https://ibb.co/8bWYmPs",
 							StartDate = DateTime.Now.AddDays(3),
 							EndDate = DateTime.Now.AddDays(20),
 							CinemaId = 1,
 							ProducerId = 5,
-							MovieCategory = MovieCategory.Drama
-						}
-					});
+							MovieCategory = MovieCategory.Romance
+						},
+
+                        new Movie()
+                        {
+                            Name = "Necista krv",
+                            Description = "This is the movie description",
+                            Price = 12.50,
+                            ImageURL = "https://ibb.co/h7ppPBw",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Drama
+                        },
+                        new Movie()
+                        {
+                            Name = "Munje",
+                            Description = "This is the movie description",
+                            Price = 12.50,
+                            ImageURL = "https://ibb.co/PmFrPK2",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Mrtav 'ladan",
+                            Description = "This is the movie description",
+                            Price = 9.50,
+                            ImageURL = "https://ibb.co/D9bwPZT",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Mala nocna muzika",
+                            Description = "This is the movie description",
+                            Price = 11.50,
+                            ImageURL = "https://ibb.co/fSsMgLZ",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Lajanje na zvezde",
+                            Description = "This is the movie description",
+                            Price = 8.50,
+                            ImageURL = "https://ibb.co/qNhy81Q",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Romance
+                        },
+                        new Movie()
+                        {
+                            Name = "Kad porastem bicu kengur",
+                            Description = "This is the movie description",
+                            Price = 9.50,
+                            ImageURL = "https://ibb.co/tc3JxjD",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Kad porastem bicu kengur",
+                            Description = "This is the movie description",
+                            Price = 9.50,
+                            ImageURL = "https://ibb.co/tc3JxjD",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Balkanska medja",
+                            Description = "This is the movie description",
+                            Price = 7.50,
+                            ImageURL = "https://ibb.co/3FLhYZX",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Action
+                        },
+                        new Movie()
+                        {
+                            Name = "Taksi bluz",
+                            Description = "This is the movie description",
+                            Price = 9.50,
+                            ImageURL = "https://ibb.co/n1wSBz4",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Falsifikator",
+                            Description = "This is the movie description",
+                            Price = 9.50,
+                            ImageURL = "https://ibb.co/JCfYYps",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Drama
+                        },
+                        new Movie()
+                        {
+                            Name = "Branio sam Mladu Bosnu",
+                            Description = "This is the movie description",
+                            Price = 7.50,
+                            ImageURL = "https://ibb.co/YPQTmmb",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Drama
+                        },
+                        new Movie()
+                        {
+                            Name = "Boomerang",
+                            Description = "This is the movie description",
+                            Price = 10.50,
+                            ImageURL = "https://ibb.co/pzbrH9n",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Comedy
+                        }
+                    });
 					context.SaveChanges();
 				}
 				//Actors & Movies

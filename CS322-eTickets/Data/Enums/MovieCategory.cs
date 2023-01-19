@@ -11,7 +11,7 @@ namespace CS322_eTickets.Data.Enums
 		Comedy,
 		Drama,
 		Documentary,
-		Cartoon,
+		Romance,
 		Horror
 	}
 }
