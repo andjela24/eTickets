@@ -1,4 +1,5 @@
 ﻿using CS322_eTickets.Data.Enums;
+using CS322_eTickets.Data.Static;
 using CS322_eTickets.Models;
 using Microsoft.AspNetCore.Identity;
 

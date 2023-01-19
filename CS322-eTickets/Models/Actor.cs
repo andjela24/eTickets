@@ -1,10 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
+﻿using CS322_eTickets.Data.Base;
+using System.ComponentModel.DataAnnotations;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CS322_eTickets.Models
 {
-	public class Actor
-	{
+	public class Actor : IEntityBase
+    {
 		[Key]
 		public int Id { get; set; }
 

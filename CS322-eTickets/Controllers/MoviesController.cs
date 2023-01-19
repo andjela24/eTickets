@@ -1,7 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using CS322_eTickets.Data.Services;
+using CS322_eTickets.Data.Static;
+using CS322_eTickets.Data.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CS322_eTickets.Controllers
 {

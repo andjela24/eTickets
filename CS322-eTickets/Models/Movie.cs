@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using CS322_eTickets.Data.Enums;
+using CS322_eTickets.Data.Base;
 
 namespace CS322_eTickets.Models
 {
-    public class Movie
-	{
+    public class Movie : IEntityBase
+    {
 		[Key]
 		public int Id { get; set; }
 
