@@ -9,7 +9,7 @@
         <div class="card mb-12">
             <div class="row g-0">
                 <div class="col-md-12">
-                    <div class="card-header text-white bg-info">
+                    <div class="card-header">
                         <p class="card-text">
                             <h5 class="card-title">
                                 @Model.Name
@@ -53,16 +53,16 @@
                                 <span class="badge bg-primary text-white">UPCOMING</span>
                             }
                         </p>
+                        <hr />
                         <p class="card-text">
                             <b>Actors: </b>
-                            <hr />
-                            <div class="row">
+                            <div class="d-flex flex-wrap">
                                 @foreach (var actor in Model.Actors_Movies)
                                 {
-                                    <div class="column text-center">
-                                        <img class="border-info rounded-circle" src="@actor.Actor.ProfilePictureURL" style="max-width: 150px" />
+                                    <div class="column text-center mr-2 mb-2">
+                                        <img class="border-info rounded-circle" src="@actor.Actor.ProfilePictureURL" />
                                         <br />
-                                        <a asp-controller="Actors" asp-action="Details" asp-route-id="@actor.ActorId">@actor.Actor.FullName</a>
+                                        <a asp-controller="Actors" asp-action="Details" asp-route-id="@actor.ActorId" id="actor_link">@actor.Actor.FullName</a>
                                     </div>
                                 }
                             </div>
@@ -72,11 +72,11 @@
                 </div>
                 <div class="col-md-12">
                     <div class="card-footer">
-                        <p class="card-text">
-                            <a class="btn btn-outline-primary float-right" asp-action="Index">
+                        <p class="card-text d-flex justify-content-center">
+                            <a class="btn btn-outline-primary mx-2" asp-action="Index">
                                 Back to List
                             </a>
-                            <a class="btn btn-success text-white  @((DateTime.Now > Model.EndDate) ? "disabled" : "")"
+                            <a class="btn btn-success mx-2 text-white  @((DateTime.Now > Model.EndDate) ? "disabled" : "")"
                                asp-controller="Orders"
                                asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id"><i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))</a>
                         </p>

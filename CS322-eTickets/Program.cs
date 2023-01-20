@@ -53,13 +53,17 @@ app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();
 
+//Authentication & Authorization
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run();
-
 //Seed database
 AppDbInitializer.Seed(app);
+AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
+
+app.Run();
+
