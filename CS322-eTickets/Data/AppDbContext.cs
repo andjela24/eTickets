@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
-
+using Microsoft.AspNetCore.Identity;
 
 namespace CS322_eTickets.Data
 {
@@ -29,6 +28,13 @@ namespace CS322_eTickets.Data
 
 
             base.OnModelCreating(modelBuilder);
+        }
+        public void SeedRoles(ModelBuilder builder1)
+        {
+            new IdentityRole() { Name="Admin", ConcurrencyStamp="1", NormalizedName="Admin"}
+        }
+        {
+
         }
 
         public DbSet<Actor> Actors { get; set; }

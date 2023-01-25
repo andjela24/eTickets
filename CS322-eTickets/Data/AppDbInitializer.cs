@@ -11,89 +11,89 @@ using System.Threading.Tasks;
 
 namespace CS322_eTickets.Data
 {
-	public class AppDbInitializer
-	{
-		public static void Seed(IApplicationBuilder applicationBuilder)
-		{
-			using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-			{
-				var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
+    public class AppDbInitializer
+    {
+        public static void Seed(IApplicationBuilder applicationBuilder)
+        {
+            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<AppDbContext>();
 
-				context.Database.EnsureCreated();
+                context.Database.EnsureCreated();
 
-				//Cinema
-				if (!context.Cinemas.Any())
-				{
-					context.Cinemas.AddRange(new List<Cinema>()
-					{
-						new Cinema()
-						{
-							Name = "Cinema 1",
-							Logo = "https://i.ibb.co/4fCBW4k/cinema.jpg",
-							Description = "This is the description of the first cinema"
-						},
-						new Cinema()
-						{
-							Name = "Cinema 2",
-							Logo = "https://i.ibb.co/yqkbpg8/cinema2.jpg",
-							Description = "This is the description of the first cinema"
-						},
-						new Cinema()
-						{
-							Name = "Cinema 3",
-							Logo = "https://i.ibb.co/4Z4zXMC/cinema3.jpg",
-							Description = "This is the description of the first cinema"
-						},
-						new Cinema()
-						{
-							Name = "Cinema 4",
-							Logo = "https://i.ibb.co/YdX8GMJ/cinema4.jpg",
-							Description = "This is the description of the first cinema"
-						},
-						new Cinema()
-						{
-							Name = "Cinema 5",
-							Logo = "https://i.ibb.co/FW0ZsMr/cinema5.jpg",
-							Description = "This is the description of the first cinema"
-						},
-					});
-					context.SaveChanges();
-				}
-				//Actors
-				if (!context.Actors.Any())
-				{
-					context.Actors.AddRange(new List<Actor>()
-					{
-						new Actor()
-						{
-							FullName = "Zoran Cvijanovic",
-							Bio = "This is the Bio of the actor Zoran Cvijanovic",
-							ProfilePictureURL = "https://i.ibb.co/SK54MVc/zoran-cvijanovic.jpg"
+                //Cinema
+                if (!context.Cinemas.Any())
+                {
+                    context.Cinemas.AddRange(new List<Cinema>()
+                    {
+                        new Cinema()
+                        {
+                            Name = "Cinema 1",
+                            Logo = "https://i.ibb.co/4fCBW4k/cinema.jpg",
+                            Description = "This is the description of the first cinema"
+                        },
+                        new Cinema()
+                        {
+                            Name = "Cinema 2",
+                            Logo = "https://i.ibb.co/yqkbpg8/cinema2.jpg",
+                            Description = "This is the description of the first cinema"
+                        },
+                        new Cinema()
+                        {
+                            Name = "Cinema 3",
+                            Logo = "https://i.ibb.co/4Z4zXMC/cinema3.jpg",
+                            Description = "This is the description of the first cinema"
+                        },
+                        new Cinema()
+                        {
+                            Name = "Cinema 4",
+                            Logo = "https://i.ibb.co/YdX8GMJ/cinema4.jpg",
+                            Description = "This is the description of the first cinema"
+                        },
+                        new Cinema()
+                        {
+                            Name = "Cinema 5",
+                            Logo = "https://i.ibb.co/FW0ZsMr/cinema5.jpg",
+                            Description = "This is the description of the first cinema"
+                        },
+                    });
+                    context.SaveChanges();
+                }
+                //Actors
+                if (!context.Actors.Any())
+                {
+                    context.Actors.AddRange(new List<Actor>()
+                    {
+                        new Actor()
+                        {
+                            FullName = "Zoran Cvijanovic",
+                            Bio = "This is the Bio of the actor Zoran Cvijanovic",
+                            ProfilePictureURL = "https://i.ibb.co/SK54MVc/zoran-cvijanovic.jpg"
 
                         },
-						new Actor()
-						{
-							FullName = "Vuk Kostic",
-							Bio = "This is the Bio of the actor Vuk Kostic",
-							ProfilePictureURL = "https://i.ibb.co/KX7JV1W/vuk-kostic.jpg"
+                        new Actor()
+                        {
+                            FullName = "Vuk Kostic",
+                            Bio = "This is the Bio of the actor Vuk Kostic",
+                            ProfilePictureURL = "https://i.ibb.co/KX7JV1W/vuk-kostic.jpg"
                         },
-						new Actor()
-						{
-							FullName = "Tihomir Stanic",
-							Bio = "This is the Bio of the actor Tihomir Stanic",
-							ProfilePictureURL = "https://i.ibb.co/W2GL4QH/tihomir-stanic.jpg"
+                        new Actor()
+                        {
+                            FullName = "Tihomir Stanic",
+                            Bio = "This is the Bio of the actor Tihomir Stanic",
+                            ProfilePictureURL = "https://i.ibb.co/W2GL4QH/tihomir-stanic.jpg"
                         },
-						new Actor()
-						{
-							FullName = "Tanja Boskovic",
-							Bio = "This is the Bio of the actor Tanja Boskovic",
-							ProfilePictureURL = "https://i.ibb.co/Kxznf26/tanja-boskovic.jpg"
+                        new Actor()
+                        {
+                            FullName = "Tanja Boskovic",
+                            Bio = "This is the Bio of the actor Tanja Boskovic",
+                            ProfilePictureURL = "https://i.ibb.co/Kxznf26/tanja-boskovic.jpg"
                         },
-						new Actor()
-						{
-							FullName = "Srdjan Todorovic",
-							Bio = "This is the Bio of the actor Srdjan Todorovic",
-							ProfilePictureURL = "https://i.ibb.co/GVz3RdV/srdjan-todorovic.jpg"
+                        new Actor()
+                        {
+                            FullName = "Srdjan Todorovic",
+                            Bio = "This is the Bio of the actor Srdjan Todorovic",
+                            ProfilePictureURL = "https://i.ibb.co/GVz3RdV/srdjan-todorovic.jpg"
                         },
                         new Actor()
                         {
@@ -253,43 +253,43 @@ namespace CS322_eTickets.Data
                         }
 
                     });
-					context.SaveChanges();
-				}
-				//Producers
-				if (!context.Producers.Any())
-				{
-					context.Producers.AddRange(new List<Producer>()
-					{
-						new Producer()
-						{
-							FullName = "Predrag Velinovic",
-							Bio = "This is the Bio of the producer Predrag Velinovic",
-							ProfilePictureURL = "https://i.ibb.co/zHVPDxy/predrag-velinovic.jpg"
+                    context.SaveChanges();
+                }
+                //Producers
+                if (!context.Producers.Any())
+                {
+                    context.Producers.AddRange(new List<Producer>()
+                    {
+                        new Producer()
+                        {
+                            FullName = "Predrag Velinovic",
+                            Bio = "This is the Bio of the producer Predrag Velinovic",
+                            ProfilePictureURL = "https://i.ibb.co/zHVPDxy/predrag-velinovic.jpg"
 
                         },
-						new Producer()
-						{
-							FullName = "Miroslav Terzic",
-							Bio = "This is the Bio of the producer Miroslav Terzic",
-							ProfilePictureURL = "https://i.ibb.co/YyKFfhK/miroslav-terzic.jpg"
+                        new Producer()
+                        {
+                            FullName = "Miroslav Terzic",
+                            Bio = "This is the Bio of the producer Miroslav Terzic",
+                            ProfilePictureURL = "https://i.ibb.co/YyKFfhK/miroslav-terzic.jpg"
                         },
-						new Producer()
-						{
-							FullName = "Radivoje Andric",
-							Bio = "This is the Bio of the producer Radivoje Andric",
-							ProfilePictureURL = "https://i.ibb.co/5TGh8Kn/radivoje-andric.jpg"
+                        new Producer()
+                        {
+                            FullName = "Radivoje Andric",
+                            Bio = "This is the Bio of the producer Radivoje Andric",
+                            ProfilePictureURL = "https://i.ibb.co/5TGh8Kn/radivoje-andric.jpg"
                         },
-						new Producer()
-						{
-							FullName = "Srdjan Koljevic",
-							Bio = "This is the Bio of the second actor",
-							ProfilePictureURL = "https://i.ibb.co/p2Z80Ht/srdjan-koljevic.jpg"
+                        new Producer()
+                        {
+                            FullName = "Srdjan Koljevic",
+                            Bio = "This is the Bio of the second actor",
+                            ProfilePictureURL = "https://i.ibb.co/p2Z80Ht/srdjan-koljevic.jpg"
                         },
-						new Producer()
-						{
-							FullName = "Zdravko Sotra",
-							Bio = "This is the Bio of the producer Srdjan Koljevic",
-							ProfilePictureURL = "https://i.ibb.co/gtkFrm3/zdravko-sotra.jpg"
+                        new Producer()
+                        {
+                            FullName = "Zdravko Sotra",
+                            Bio = "This is the Bio of the producer Srdjan Koljevic",
+                            ProfilePictureURL = "https://i.ibb.co/gtkFrm3/zdravko-sotra.jpg"
                         },
                         new Producer()
                         {
@@ -335,85 +335,85 @@ namespace CS322_eTickets.Data
                         }
 
                     });
-					context.SaveChanges();
-				}
-				//Movies
-				if (!context.Movies.Any())
-				{
-					context.Movies.AddRange(new List<Movie>()
-					{
-						new Movie()
-						{
-							Name = "Volim te najvise na svetu",
-							Description = "This is the movie description",
-							Price = 850,
-							ImageURL = "https://i.ibb.co/KDK3srH/volim-te-najvise-na-svetu-poster.jpg",
-							StartDate = DateTime.Now.AddDays(-10),
-							EndDate = DateTime.Now.AddDays(10),
-							CinemaId = 3,
-							ProducerId = 1,
-							MovieCategory = MovieCategory.Comedy
-						},
-						new Movie()
-						{
-							Name = "Ustanicka ulica",
-							Description = "This is the movie description",
-							Price = 950,
-							ImageURL = "https://i.ibb.co/85WwTFw/ustanicka-ulica-poster.jpg",
-							StartDate = DateTime.Now,
-							EndDate = DateTime.Now.AddDays(3),
-							CinemaId = 1,
-							ProducerId = 2,
-							MovieCategory = MovieCategory.Action
-						},
-						new Movie()
-						{
-							Name = "3 Palme za 2 bitange i ribicu",
-							Description = "This is the movie description",
-							Price = 1150,
-							ImageURL = "https://i.ibb.co/pQ3FYzk/tri-palme-za-dve-bitange-i-ribicu-poster.jpg",
-							StartDate = DateTime.Now,
-							EndDate = DateTime.Now.AddDays(7),
-							CinemaId = 4,
-							ProducerId = 3,
-							MovieCategory = MovieCategory.Comedy
-						},
-						new Movie()
-						{
-							Name = "Sivi kamion crvene boje",
-							Description = "This is the movie description",
-							Price = 1000,
-							ImageURL = "https://i.ibb.co/hXQPrTH/sivi-kamion-crvene-boje-poster.jpg",
-							StartDate = DateTime.Now.AddDays(-10),
-							EndDate = DateTime.Now.AddDays(-5),
-							CinemaId = 1,
-							ProducerId = 4,
-							MovieCategory = MovieCategory.Comedy
-						},
-						new Movie()
-						{
-							Name = "Sesir profesora Kosete Vujica",
-							Description = "This is the movie description",
-							Price = 850,
-							ImageURL = "https://i.ibb.co/7NfLC5r/sesir-profesora-koste-vujica-serija-poster.jpg",
-							StartDate = DateTime.Now.AddDays(-10),
-							EndDate = DateTime.Now.AddDays(-2),
-							CinemaId = 1,
-							ProducerId = 5,
-							MovieCategory = MovieCategory.Documentary
-						},
-						new Movie()
-						{
-							Name = "Samac u braku",
-							Description = "This is the movie description",
-							Price = 1250,
-							ImageURL = "https://i.ibb.co/jzcJ83f/samac-u-braku-poster.jpg",
-							StartDate = DateTime.Now.AddDays(3),
-							EndDate = DateTime.Now.AddDays(20),
-							CinemaId = 1,
-							ProducerId = 5,
-							MovieCategory = MovieCategory.Romance
-						},
+                    context.SaveChanges();
+                }
+                //Movies
+                if (!context.Movies.Any())
+                {
+                    context.Movies.AddRange(new List<Movie>()
+                    {
+                        new Movie()
+                        {
+                            Name = "Volim te najvise na svetu",
+                            Description = "This is the movie description",
+                            Price = 850,
+                            ImageURL = "https://i.ibb.co/KDK3srH/volim-te-najvise-na-svetu-poster.jpg",
+                            StartDate = DateTime.Now.AddDays(-10),
+                            EndDate = DateTime.Now.AddDays(10),
+                            CinemaId = 3,
+                            ProducerId = 1,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Ustanicka ulica",
+                            Description = "This is the movie description",
+                            Price = 950,
+                            ImageURL = "https://i.ibb.co/85WwTFw/ustanicka-ulica-poster.jpg",
+                            StartDate = DateTime.Now,
+                            EndDate = DateTime.Now.AddDays(3),
+                            CinemaId = 1,
+                            ProducerId = 2,
+                            MovieCategory = MovieCategory.Action
+                        },
+                        new Movie()
+                        {
+                            Name = "3 Palme za 2 bitange i ribicu",
+                            Description = "This is the movie description",
+                            Price = 1150,
+                            ImageURL = "https://i.ibb.co/pQ3FYzk/tri-palme-za-dve-bitange-i-ribicu-poster.jpg",
+                            StartDate = DateTime.Now,
+                            EndDate = DateTime.Now.AddDays(7),
+                            CinemaId = 4,
+                            ProducerId = 3,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Sivi kamion crvene boje",
+                            Description = "This is the movie description",
+                            Price = 1000,
+                            ImageURL = "https://i.ibb.co/hXQPrTH/sivi-kamion-crvene-boje-poster.jpg",
+                            StartDate = DateTime.Now.AddDays(-10),
+                            EndDate = DateTime.Now.AddDays(-5),
+                            CinemaId = 1,
+                            ProducerId = 4,
+                            MovieCategory = MovieCategory.Comedy
+                        },
+                        new Movie()
+                        {
+                            Name = "Sesir profesora Kosete Vujica",
+                            Description = "This is the movie description",
+                            Price = 850,
+                            ImageURL = "https://i.ibb.co/7NfLC5r/sesir-profesora-koste-vujica-serija-poster.jpg",
+                            StartDate = DateTime.Now.AddDays(-10),
+                            EndDate = DateTime.Now.AddDays(-2),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Documentary
+                        },
+                        new Movie()
+                        {
+                            Name = "Samac u braku",
+                            Description = "This is the movie description",
+                            Price = 1250,
+                            ImageURL = "https://i.ibb.co/jzcJ83f/samac-u-braku-poster.jpg",
+                            StartDate = DateTime.Now.AddDays(3),
+                            EndDate = DateTime.Now.AddDays(20),
+                            CinemaId = 1,
+                            ProducerId = 5,
+                            MovieCategory = MovieCategory.Romance
+                        },
                         new Movie()
                         {
                             Name = "Necista krv",
@@ -547,59 +547,59 @@ namespace CS322_eTickets.Data
                             MovieCategory = MovieCategory.Comedy
                         }
                     });
-					context.SaveChanges();
-				}
-				//Actors & Movies
-				if (!context.Actors_Movies.Any())
-				{
-					context.Actors_Movies.AddRange(new List<Actor_Movie>()
-					{
-						new Actor_Movie()
-						{
-							ActorId = 1,
-							MovieId = 8
-						},
-						new Actor_Movie()
-						{
-							ActorId = 2,
-							MovieId = 13
-						},
+                    context.SaveChanges();
+                }
+                //Actors & Movies
+                if (!context.Actors_Movies.Any())
+                {
+                    context.Actors_Movies.AddRange(new List<Actor_Movie>()
+                    {
+                        new Actor_Movie()
+                        {
+                            ActorId = 1,
+                            MovieId = 8
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 2,
+                            MovieId = 13
+                        },
                         new Actor_Movie()
                         {
                             ActorId = 2,
                             MovieId = 10
                         },
                          new Actor_Movie()
-						{
-							ActorId = 3,
-							MovieId = 15
-						},
-						 new Actor_Movie()
-						{
-							ActorId = 4,
-							MovieId = 1
-						},
+                        {
+                            ActorId = 3,
+                            MovieId = 15
+                        },
+                         new Actor_Movie()
+                        {
+                            ActorId = 4,
+                            MovieId = 1
+                        },
 
-						new Actor_Movie()
-						{
-							ActorId = 5,
-							MovieId = 3
-						},
+                        new Actor_Movie()
+                        {
+                            ActorId = 5,
+                            MovieId = 3
+                        },
                         new Actor_Movie()
                         {
                             ActorId = 5,
                             MovieId = 9
                         },
                         new Actor_Movie()
-						{
-							ActorId = 6,
-							MovieId = 7
-						},
-						new Actor_Movie()
-						{
-							ActorId = 7,
-							MovieId = 16
-						},
+                        {
+                            ActorId = 6,
+                            MovieId = 7
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 7,
+                            MovieId = 16
+                        },
                         new Actor_Movie()
                         {
                             ActorId = 8,
@@ -607,10 +607,10 @@ namespace CS322_eTickets.Data
                         },
 
                         new Actor_Movie()
-						{
-							ActorId = 9,
-							MovieId = 9
-						},
+                        {
+                            ActorId = 9,
+                            MovieId = 9
+                        },
                         new Actor_Movie()
                         {
                             ActorId = 10,
@@ -752,70 +752,186 @@ namespace CS322_eTickets.Data
                             MovieId = 5
                         },
                     });
-					context.SaveChanges();
-				}
-			}
-
-		}
-
-		public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
-		{
-			using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-			{
-
-				//Roles
-				var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-				if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-					await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
-				if (!await roleManager.RoleExistsAsync(UserRoles.User))
-					await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-
-				//Users
-				var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-				string adminUserEmail = "admin@etickets.com";
-
-				var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
-				if (adminUser == null)
-				{
-					var newAdminUser = new ApplicationUser()
-					{
-						FullName = "Admin User",
-						UserName = "admin-user",
-						Email = adminUserEmail,
-						EmailConfirmed = true
-					};
-					await userManager.CreateAsync(newAdminUser, "etickets@1234?");
-					await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
-				}
-                else
-                {
-                    // admin already exists, proceed with adding to role
-                    await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
-                }
-
-
-                string appUserEmail = "user@etickets.com";
-
-				var appUser = await userManager.FindByEmailAsync(appUserEmail);
-				if (appUser == null)
-				{
-					var newAppUser = new ApplicationUser()
-					{
-						FullName = "Application User",
-						UserName = "app-user",
-						Email = appUserEmail,
-						EmailConfirmed = true
-					};
-					await userManager.CreateAsync(newAppUser, "etickets@1234?");
-					await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
-				}
-                else
-                {
-                    // user already exists, proceed with adding to role
-                    await userManager.AddToRoleAsync(appUser, UserRoles.User);
+                    context.SaveChanges();
                 }
             }
-		}
-	}
+
+        }
+        public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
+        {
+            if (applicationBuilder.ApplicationServices == null)
+            {
+                //log an error or throw an exception
+                Console.WriteLine("Ovde je greska");
+                return;
+            }
+            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
+            {
+
+                //Roles
+                var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
+                    await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
+                if (!await roleManager.RoleExistsAsync(UserRoles.User))
+                    await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
+
+                //Users
+                var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+                string adminUserEmail = "admin@etickets.com";
+
+                var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
+                if (adminUser == null)
+                {
+                    var newAdminUser = new ApplicationUser()
+                    {
+                        FullName = "Admin User",
+                        UserName = "admin-user",
+                        Email = adminUserEmail,
+                        EmailConfirmed = true
+                    };
+                    var result = await userManager.CreateAsync(newAdminUser, "etickets@1234?");
+                    var passwordHasher = userManager.PasswordHasher;
+                    var hashedPassword = passwordHasher.HashPassword(newAdminUser, "etickets@1234?");
+                    await userManager.UpdateAsync(newAdminUser);
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
+                    }
+                    else if (!result.Succeeded)
+                    {
+                        var errors = result.Errors;
+                        foreach (var error in errors)
+                        {
+                            Console.WriteLine(error.Description);
+                        }
+                    }
+                    else
+                    {
+                        // admin already exists, proceed with adding to role
+                        await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
+                    }
+                    /*if (adminUser == null)
+                    {
+                        var newAdminUser = new ApplicationUser()
+                        {
+                            FullName = "Admin User",
+                            UserName = "admin-user",
+                            Email = adminUserEmail,
+                            EmailConfirmed = true
+                        };
+                        var result = await userManager.CreateAsync(newAdminUser, "etickets@1234?");
+                        if (result.Succeeded)
+                        {
+                            await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
+                        }
+                        else
+                        {
+                            Console.WriteLine(string.Join(",", result.Errors.Select(e => e.Description)));
+                        }
+                    }
+                    else
+                    {
+                        // admin already exists, proceed with adding to role
+                        await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
+                    }
+
+                    */
+                    string appUserEmail = "user@etickets.com";
+
+                    var appUser = await userManager.FindByEmailAsync(appUserEmail);
+                    if (appUser == null)
+                    {
+                        var newAppUser = new ApplicationUser()
+                        {
+                            FullName = "Application User",
+                            UserName = "app-user",
+                            Email = appUserEmail,
+                            EmailConfirmed = true
+                        };
+                        var createResult = await userManager.CreateAsync(newAppUser, "etickets@1234?");
+                        if (createResult.Succeeded)
+                        {
+                            await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
+                        }
+                        else if (!createResult.Succeeded)
+                        {
+                            var errors = createResult.Errors;
+                            foreach (var error in errors)
+                            {
+                                Console.WriteLine(error.Description);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // user already exists, proceed with adding to role
+                        await userManager.AddToRoleAsync(appUser, UserRoles.User);
+                    }
+                }
+            }
+
+            /*
+            public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
+            {
+                using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
+                {
+
+                    //Roles
+                    var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                    if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
+                        await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
+                    if (!await roleManager.RoleExistsAsync(UserRoles.User))
+                        await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
+
+                    //Users
+                    var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+                    string adminUserEmail = "admin@etickets.com";
+
+                    var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
+                    if (adminUser == null)
+                    {
+                        var newAdminUser = new ApplicationUser()
+                        {
+                            FullName = "Admin User",
+                            UserName = "admin-user",
+                            Email = adminUserEmail,
+                            EmailConfirmed = true
+                        };
+                        await userManager.CreateAsync(newAdminUser, "etickets@1234?");
+                        await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
+                    }
+                    else
+                    {
+                        // admin already exists, proceed with adding to role
+                        await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
+                    }
+
+
+                    string appUserEmail = "user@etickets.com";
+
+                    var appUser = await userManager.FindByEmailAsync(appUserEmail);
+                    if (appUser == null)
+                    {
+                        var newAppUser = new ApplicationUser()
+                        {
+                            FullName = "Application User",
+                            UserName = "app-user",
+                            Email = appUserEmail,
+                            EmailConfirmed = true
+                        };
+                        await userManager.CreateAsync(newAppUser, "etickets@1234?");
+                        await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
+                    }
+                    else
+                    {
+                        // user already exists, proceed with adding to role
+                        await userManager.AddToRoleAsync(appUser, UserRoles.User);
+                    }
+                }
+            }
+            */
+        }
+    }
 }
