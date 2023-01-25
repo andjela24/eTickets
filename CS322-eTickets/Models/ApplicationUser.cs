@@ -9,6 +9,7 @@ namespace CS322_eTickets.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        //This is additional data to the user model without modifying the built-in IdentityUser class
         [Display(Name = "Full name")]
         public string FullName { get; set; }
     }

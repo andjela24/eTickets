@@ -762,7 +762,7 @@ namespace CS322_eTickets.Data
             if (applicationBuilder.ApplicationServices == null)
             {
                 //log an error or throw an exception
-                Console.WriteLine("Ovde je greska");
+                Console.WriteLine("Unsuccessful start of application");
                 return;
             }
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
@@ -811,32 +811,7 @@ namespace CS322_eTickets.Data
                         // admin already exists, proceed with adding to role
                         await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
                     }
-                    /*if (adminUser == null)
-                    {
-                        var newAdminUser = new ApplicationUser()
-                        {
-                            FullName = "Admin User",
-                            UserName = "admin-user",
-                            Email = adminUserEmail,
-                            EmailConfirmed = true
-                        };
-                        var result = await userManager.CreateAsync(newAdminUser, "etickets@1234?");
-                        if (result.Succeeded)
-                        {
-                            await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
-                        }
-                        else
-                        {
-                            Console.WriteLine(string.Join(",", result.Errors.Select(e => e.Description)));
-                        }
-                    }
-                    else
-                    {
-                        // admin already exists, proceed with adding to role
-                        await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
-                    }
-
-                    */
+                   
                     string appUserEmail = "user@etickets.com";
 
                     var appUser = await userManager.FindByEmailAsync(appUserEmail);
@@ -870,68 +845,6 @@ namespace CS322_eTickets.Data
                     }
                 }
             }
-
-            /*
-            public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBuilder)
-            {
-                using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-                {
-
-                    //Roles
-                    var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-                    if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
-                        await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
-                    if (!await roleManager.RoleExistsAsync(UserRoles.User))
-                        await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
-
-                    //Users
-                    var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-                    string adminUserEmail = "admin@etickets.com";
-
-                    var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
-                    if (adminUser == null)
-                    {
-                        var newAdminUser = new ApplicationUser()
-                        {
-                            FullName = "Admin User",
-                            UserName = "admin-user",
-                            Email = adminUserEmail,
-                            EmailConfirmed = true
-                        };
-                        await userManager.CreateAsync(newAdminUser, "etickets@1234?");
-                        await userManager.AddToRoleAsync(newAdminUser, UserRoles.Admin);
-                    }
-                    else
-                    {
-                        // admin already exists, proceed with adding to role
-                        await userManager.AddToRoleAsync(adminUser, UserRoles.Admin);
-                    }
-
-
-                    string appUserEmail = "user@etickets.com";
-
-                    var appUser = await userManager.FindByEmailAsync(appUserEmail);
-                    if (appUser == null)
-                    {
-                        var newAppUser = new ApplicationUser()
-                        {
-                            FullName = "Application User",
-                            UserName = "app-user",
-                            Email = appUserEmail,
-                            EmailConfirmed = true
-                        };
-                        await userManager.CreateAsync(newAppUser, "etickets@1234?");
-                        await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
-                    }
-                    else
-                    {
-                        // user already exists, proceed with adding to role
-                        await userManager.AddToRoleAsync(appUser, UserRoles.User);
-                    }
-                }
-            }
-            */
         }
     }
 }

@@ -25,6 +25,7 @@ namespace CS322_eTickets.Controllers
             _context = context;
         }
 
+    //Retrive all users regardless of role
     public async Task<IActionResult> Users()
         {
             var users = await _context.Users.ToListAsync();
@@ -53,105 +54,6 @@ namespace CS322_eTickets.Controllers
             return View(loginVM);
         }
 
-        /*chat gpt code
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginVM loginVM)
-        {
-            if (!ModelState.IsValid) return View(loginVM);
-
-            var user = await _userManager.FindByEmailAsync(loginVM.EmailAddress);
-            if (user != null)
-            {
-                var passwordCheck = await _userManager.CheckPasswordAsync(user, loginVM.Password);
-                if (passwordCheck)
-                {
-                    var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
-                    if (result.Succeeded)
-                    {
-                        if (await _userManager.IsInRoleAsync(user, UserRoles.Admin))
-                        {
-                            //user is admin, redirect to admin page
-                            return RedirectToAction("Index", "Movies");
-                        }
-                        else
-                        {
-                            //user is regular user, redirect to user page
-                            return RedirectToAction("Index", "Movies");
-                        }
-                    }
-                }
-                TempData["Error"] = "Wrong credentials. Please, try again!";
-                return View(loginVM);
-            }
-
-            TempData["Error"] = "Wrong credentials. Please, try again!";
-            return View(loginVM);
-        }
-        */
-        /* stari kod
-
-        public IActionResult Login() => View(new LoginVM());
-
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginVM loginVM)
-        {
-            if (!ModelState.IsValid) return View(loginVM);
-
-            var user = await _userManager.FindByEmailAsync(loginVM.EmailAddress);
-            if (user != null)
-            {
-                var passwordCheck = await _userManager.CheckPasswordAsync(user, loginVM.Password);
-                if (passwordCheck)
-                {
-                    var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
-                    if (await _userManager.IsInRoleAsync(user, UserRoles.Admin))
-                    {
-                        //user is admin, let them login
-                        return RedirectToAction("Index", "Movies");
-                    }
-
-                    if (result.Succeeded)
-                    {
-                        return RedirectToAction("Index", "Movies");
-                    }
-                }
-                TempData["Error"] = "Wrong credentials. Please, try again!";
-                return View(loginVM);
-            }
-
-            TempData["Error"] = "Wrong credentials. Please, try again!";
-            return View(loginVM);
-        }
-        */
-        /* STARI KOD
-        public IActionResult Register() => View(new RegisterVM());
-
-        [HttpPost]
-        public async Task<IActionResult> Register(RegisterVM registerVM)
-        {
-            if (!ModelState.IsValid) return View(registerVM);
-
-            var user = await _userManager.FindByEmailAsync(registerVM.EmailAddress);
-            if (user != null)
-            {
-                TempData["Error"] = "This email address is already in use";
-                return View(registerVM);
-            }
-
-            var newUser = new ApplicationUser()
-            {
-                FullName = registerVM.FullName,
-                Email = registerVM.EmailAddress,
-                UserName = registerVM.EmailAddress
-            };
-            var newUserResponse = await _userManager.CreateAsync(newUser, registerVM.Password);
-
-            if (newUserResponse.Succeeded)
-                await _userManager.AddToRoleAsync(newUser, UserRoles.User);
-
-            return View("RegisterCompleted");
-        }
-        */
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
@@ -163,7 +65,7 @@ namespace CS322_eTickets.Controllers
         {
             return View();
         }
-        /* CHAT GPT CODE 1
+        
         public IActionResult Register() => View(new RegisterVM());
 
         [HttpPost]
@@ -171,65 +73,39 @@ namespace CS322_eTickets.Controllers
         {
             if (!ModelState.IsValid) return View(registerVM);
 
-            var user = await _userManager.FindByEmailAsync(registerVM.EmailAddress);
-            if (user != null)
+            // Check if user already exists
+            var existingUser = await _userManager.FindByEmailAsync(registerVM.EmailAddress);
+            if (existingUser != null)
             {
-                TempData["Error"] = "This email address is already in use";
+                ModelState.AddModelError(string.Empty, "A user with this email address already exists.");
                 return View(registerVM);
             }
 
-            var newUser = new ApplicationUser()
-            {
-                FullName = registerVM.FullName,
-                Email = registerVM.EmailAddress,
-                UserName = registerVM.EmailAddress
-            };
-            var newUserResponse = await _userManager.CreateAsync(newUser, registerVM.Password);
-
-            if (!newUserResponse.Succeeded)
-            {
-                // handle errors
-                return View("Error", newUserResponse.Errors);
-            }
-
-            await _userManager.AddToRoleAsync(newUser, UserRoles.User);
-
-            // sign in the user
-            await _signInManager.SignInAsync(newUser, isPersistent: false);
-
-            return View("RegisterCompleted");
-        }
-        */
-        public IActionResult Register() => View(new RegisterVM());
-
-        [HttpPost]
-        public async Task<IActionResult> Register(RegisterVM registerVM)
-        {
-            if (!ModelState.IsValid) return View(registerVM);
-
+            // Add user to database
             var user = new ApplicationUser
             {
                 FullName = registerVM.FullName,
                 Email = registerVM.EmailAddress,
                 UserName = registerVM.EmailAddress
             };
+
+            // Assign role based on selection from form
             var result = await _userManager.CreateAsync(user, registerVM.Password);
+            await _userManager.AddToRoleAsync(user, UserRoles.User);
 
             if (result.Succeeded)
             {
-                await _userManager.AddToRoleAsync(user, UserRoles.User);
                 await _signInManager.SignInAsync(user, isPersistent: false);
                 return RedirectToAction("Index", "Movies");
             }
-
-            // If there are any errors, add them to the ModelState object
-            // so they can be displayed to the user.
-            foreach (var error in result.Errors)
+            else
             {
-                ModelState.AddModelError(string.Empty, error.Description);
+                ModelState.AddModelError(string.Empty, "Creating user unsuccessful");
             }
 
             return View(registerVM);
         }
+
+
     }
 }

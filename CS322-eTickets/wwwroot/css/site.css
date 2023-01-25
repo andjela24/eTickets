@@ -1,3 +1,7 @@
+:root {
+    --background-color: #191A19;
+    --card-header-color: #3E065F;
+}
 html {
   font-size: 14px;
 }
@@ -15,19 +19,46 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #d5e9dc;
+    background-color: var(--background-color);
 }
 nav {
-    background-color: #d5e9dc;
+    background-color: var(--background-color);
+
 }
-footer{
-    text-align:center;
+.container-fluid > a.navbar-brand {
+    color: white;
+    font-weight: 700;
+}
+/*ovaj deo ne radi*/
+.container-fluid > a.navbar-brand :hover {
+    color: #3E065F;
+    font-weight: 700;
+    }
+.container-fluid >.nav-item> a.nav-link {
+    color: white;
+}
+.nav-link dropdown-toggle{
+    color:white;
+}
+/*do ovde ne radi*/
+#icon-movie {
+    color: white;
+    font-size: 1.5rem;
+}
+#icon-managment {
+    color: white;
+    font-size: 1.5rem;
+}
+footer {
+    text-align: center;
 }
 /*Movies Index*/
 .card-header {
-    background-color: #2c4e31;
+    background-color: var(--card-header-color);
     color: white;
     text-align: center;
+    border-radius: 20px;
+    
 }
 .card.mb-3 {
     max-width: 540px;

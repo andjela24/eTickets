@@ -29,13 +29,6 @@ namespace CS322_eTickets.Data
 
             base.OnModelCreating(modelBuilder);
         }
-        public void SeedRoles(ModelBuilder builder1)
-        {
-            new IdentityRole() { Name="Admin", ConcurrencyStamp="1", NormalizedName="Admin"}
-        }
-        {
-
-        }
 
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
