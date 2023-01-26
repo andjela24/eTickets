@@ -2,44 +2,35 @@
 @model LoginVM;
 
 @{
-    ViewData["Title"] = "Log in to your account";
+    ViewData["Title"] = "Login";
 }
-
 <div class="row">
-    <div class="col-md-6 offset-3">
-        <p>
-            <h4>Log in to your account</h4>
-        </p>
-
-        @if (TempData["Error"] != null)
-        {
-            <div class="col-md-12 alert alert-danger">
-                <span><b>Sorry!</b> - @TempData["Error"] </span>
-            </div>
-        }
-
-        <div class="row">
-            <div class="col-md-8 offset-2">
-                <form asp-action="Login">
+    @if(TempData["Error"] != null)
+            {
+                <div class="col-md-12 alert alert-danger">
+                    <span><b>Sorry!</b> - @TempData["Error"] </span>
+                </div>
+            }
+<div class="login-card">
+    <div class="login-card-content">
+        <div class="login-card-title">
+            <h2>LOGIN</h2>
+        <div class="underline-title"></div>
+        </div>
+        <form asp-action="Login" class="form">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                    <div class="form-group">
-                        <label asp-for="EmailAddress" class="control-label"></label>
-                        <input asp-for="EmailAddress" class="form-control" />
+                        <label asp-for="EmailAddress" class="form-label"></label>
+                        <input asp-for="EmailAddress" class="form-content" />
                         <span asp-validation-for="EmailAddress" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" class="form-control" />
+            <div class="form-border"></div>
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" class="form-content" />
                         <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
+            <div class="form-border"></div>
 
-                    <div class="form-group">
-                        <input class="btn btn-outline-success my-2" type="submit" value="Log in" />
-                        <a class="btn btn-outline-secondary my-2" asp-controller="Movies" asp-action="Index">Cancel</a>
-                    </div>
+            <input id="login-submit-btn" type="submit" name="submit" value="LOGIN" />
                 </form>
-            </div>
-        </div>
     </div>
+</div>
 </div>

@@ -7,8 +7,8 @@
 <div class="row">
     @foreach (var item in Model)
     {
-        <div class="col-md-4 col-xs-6 border-primary mb-3">
-            <div class="card mb-3">
+        <div class="col-md-4 col-xs-6 mb-3">
+            <div class="card mb-3 card-rounded">
                 <div class="row g-0">
                     <div class="col-md-12">
                         <div class="card-header">
@@ -54,10 +54,10 @@
                     <div class="col-md-12">
                         <div class="card-footer ">
                             <p class="card-text d-flex justify-content-center">
-                                <a class="btn btn-outline-primary mx-2" asp-action="Details" asp-route-id="@item.Id">
+                                <a class="btn detail-btn mx-2" asp-action="Details" asp-route-id="@item.Id">
                                     <i class="bi bi-eye-fill"></i> Show Details
                                 </a>
-                                <a class="btn btn-success mx-2 text-white @((DateTime.Now > item.EndDate) ? "disabled" : "")"
+                                <a class="btn cart-btn mx-2 @((DateTime.Now > item.EndDate) ? "disabled" : "")"
                                asp-controller="Orders"
                                asp-action="AddItemToShoppingCart"
                                asp-route-id="@item.Id">
